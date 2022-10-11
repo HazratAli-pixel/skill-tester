@@ -49,7 +49,7 @@ const Profile = ({totalqsn, topicName, rightanswer, wronganswer, overallright, o
                     <h5 className='text-start py-2 font-bold '>Total Qeuestions : {totalqsn}</h5>
                     <h5 className='text-start py-2 font-bold '>Right Answer : {rightanswer} </h5>
                     <h5 className='text-start py-2 font-bold '>Wrong Answer : {wronganswer} </h5>
-                    <h5 className='text-start py-2 font-bold '>Total Mark : {rightanswer} </h5>
+                    <h5 className='text-start py-2 font-bold '>Total Mark : {rightanswer-(wronganswer*.25)} </h5>
                 </div>
             </div>
             <div className='w-full mt-5 rounded-lg bg-slate-50 border-2 border-slate-400'>

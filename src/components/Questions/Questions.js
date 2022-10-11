@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Qsnoptions from '../Qsnoptions/Qsnoptions';
 
-const Questions = ({allquestions, handlequiz, notify}) => {
+const Questions = ({allquestions, handlequiz, notify,topicName}) => {
         
 
     return (
@@ -14,9 +14,9 @@ const Questions = ({allquestions, handlequiz, notify}) => {
                     <h1 className='text-center font-bold'>{allquestions.question}</h1>
                     <span><EyeIcon onClick={()=>notify(allquestions.id)} className="h-6 w-6 text-blue-500"/></span>
                 </div>
-                <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-2'>
+                <div className=' grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-2'>
                     {
-                        allquestions.options.map((option)=> <Qsnoptions key={option} id={allquestions.id} handlequiz={handlequiz} options={option}></Qsnoptions>)
+                        allquestions.options.map((option)=> <Qsnoptions key={option} topicName={topicName} id={allquestions.id} handlequiz={handlequiz} options={option}></Qsnoptions>)
                     }
                     <h1>{}</h1>
                 </div>            
