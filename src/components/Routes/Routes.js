@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import ChartLayout from "../ChartLayout/ChartLayout";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Home/Home";
 import Layout from "../Layout/Layout";
@@ -16,7 +17,11 @@ export const router = createBrowserRouter([
             },
             {
                 path:'statistics',
-                element: <h1>this is statistics</h1>,
+                loader: async ()=>{
+                    return fetch(`
+                    https://openapi.programming-hero.com/api/quiz`)
+                },
+                element: <ChartLayout></ChartLayout>,
             },
             {
                 path:'blog',
