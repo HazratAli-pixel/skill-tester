@@ -11,7 +11,7 @@ const MainQuizPart = () => {
     },[])
     return (
         <div className='container mx-auto bg-red-300'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4  gap-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4  gap-4'>
             {
                 topics.map(data => <Topics key={data.id} quiztopics={data}></Topics>)
             }
