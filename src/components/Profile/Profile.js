@@ -1,61 +1,62 @@
-import React from 'react';
-import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
 
 
-const Profile = () => {
+const Profile = ({totalqsn, topicName, rightanswer, wronganswer, overallright, overallwrong}) => {
     return (
-        <div className='p-2 stickyy'>
+        <div className='p-2 '>
             <div className='flex py-3'>
-                <div className='pr-3'>
+                <div className=''>
                     <img src="/assets/alill.jpg" style={{width:'50px'}} className='rounded-full border-4 border-zinc-50'  alt="" />
                 </div>
-                <div className=''>
-                    <h5 className='p-0 m-0 text-start'>Mr. Hazrat Ali</h5>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-</svg>
+                <div className='pl-3'>
+                    <h5 className='p-0 m-0 text-start font-bold'>Mr. Hazrat Ali</h5>
+                    <p className='p-0 m-0 text-start font-bold'><FontAwesomeIcon icon={faLocationDot}/> Mohammdpur, Dhaka</p>
                 </div>
             </div>
-            <div className='com_color2 rounded-3 d-flex justify-content-around p-2'>
-                <div className='d-flex flex-column p-0 m-0 '>
-                    <div className='d-flex'>
-                        <h5 className='p-0 m-0'>70</h5>
-                        <p className='p-0 m-0'>kg</p>
+            <div className='rounded-lg bg-teal-200 border-2  border-teal-400  flex justify-around p-2'>
+                <div className='flex flex-col p-0 m-0 '>
+                    <div className='flex'>
+                        <p className='p-0 m-0 font-bold text-2xl'>70</p>
+                        <p className='p-0 m-0 align-bottom'>kg</p>
                     </div>
                     <p className='p-0 m-0 fw-bold'>weight</p>
                 </div>
-                <div className='d-flex flex-column p-0 m-0'>
+                <div className='flex flex-col p-0 m-0'>
                     <div className=''>
-                        <h5 className='p-0 m-0'>5.8"</h5>
+                        <h5 className='p-0 m-0 font-bold text-2xl'>5.8"</h5>
                     </div>
                     <p className='p-0 m-0 fw-bold'>Height</p>
                 </div>
-                <div className='d-flex flex-column p-0 m-0'>
-                    <div className='d-flex'>
-                        <h5 className='p-0 m-0'>25</h5>
+                <div className='flex flex-col p-0 m-0'>
+                    <div className='flex'>
+                        <h5 className='p-0 m-0 font-bold text-2xl'>25</h5>
                         <p className='p-0 m-0'>yr</p>
                     </div>
                     <p className='p-0 m-0 fw-bold'>Age</p>
                 </div>
-                
             </div>
-            <h5 className='text-start pt-4 pb-2 fw-bold'>Add a Break</h5>
-            <h5 className='text-start pt-4 pb-2 fw-bold'>Exercise Details</h5>
-            <div className='com_color2 rounded-3 p-3 mt-2'>
-                <div className='d-flex justify-content-between'>
-                    <p className='m-0'>Exercise Time</p>
-                </div>
+            <div className='w-full mt-5 rounded-lg bg-slate-50 border-2 border-slate-400'>
+                <p className="bg-slate-200 p-4 rounded-lg font-extrabold text-slate-800" >Statistics</p>
             </div>
-            <div className='com_color2 rounded-3 p-3 mt-2'>
-                <div className='d-flex justify-content-between'>
-                    <p className='m-0'>Break Time</p>
-                </div>
+            <div className='rounded-lg bg-teal-200 border-2 border-teal-400 mt-5 p-2'>
+                <h5 className='text-start py-2 font-bold '>Topic Name : {topicName}</h5>
+                <h5 className='text-start py-2 font-bold '>Total Qeuestions : {totalqsn}</h5>
+                <h5 className='text-start py-2 font-bold '>Right Answer : {rightanswer} </h5>
+                <h5 className='text-start py-2 font-bold '>Wrong Answer : {wronganswer} </h5>
+                <h5 className='text-start py-2 font-bold '>Total Mark : {rightanswer} </h5>
             </div>
-            <div className='pt-5'><button className="btn btn-warning w-100" >Clear Storage </button></div>
-            <div className='pt-2'><button className="btn btn-primary w-100" >Activity Complited </button></div>
+            <div className='w-full mt-5 rounded-lg bg-slate-50 border-2 border-slate-400'>
+                <p className="bg-slate-200 p-4 rounded-lg font-extrabold text-slate-800" >Overall Statistics</p>
+            </div>
+            <div className='rounded-lg bg-teal-200 border-2 border-teal-400 mt-5 p-2'>
+                <h5 className='text-start py-2 font-bold '>Total Qeuestions : {overallwrong+overallright} </h5>
+                <h5 className='text-start py-2 font-bold '>Right Answer : {overallright}</h5>
+                <h5 className='text-start py-2 font-bold '>Wrong Answer : {overallwrong}</h5>
+                <h5 className='text-start py-2 font-bold '>Total Mark : {overallright}</h5>
+            </div>
         </div>
     );
 };

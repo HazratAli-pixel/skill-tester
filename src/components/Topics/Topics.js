@@ -1,3 +1,5 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,10 +11,9 @@ const Topics = ({quiztopics}) => {
         <figure className='bg-black'><img className='w-full' src={quiztopics.logo} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title">{quiztopics.name}</h2>
-          <p>Total Quiz : {quiztopics.total}</p>
-          <div className="card-actions justify-between">
-            <Link to={`quiz/${quiztopics.id}`} className="btn btn-primary">Buy Now</Link>
-            <Link to={`quiz/${quiztopics.id}`} className="btn btn-primary">Buy Now</Link>
+          <p className='font-extrabold text-start'>Total Quiz : {quiztopics.total}</p>
+          <div className="card-actions justify-end">
+            <Link to={`quiz/${quiztopics.id}`} className="btn btn-primary">Start Practice <FontAwesomeIcon className='pl-3' icon={faArrowRight}/> </Link>
           </div>
         </div>
       </div>

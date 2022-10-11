@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Qsnoptions = ({options,id}) => {
+const Qsnoptions = ({options,id, handlequiz}) => {
     return (
         <div>
-            <div className='bg-white p-3'>
-                <input type="radio" id={options} name={id} value={options}/>
-                <label htmlFor={options}>{options}</label>
+            <div className='bg-white p-3 rounded-lg text-start'>
+                <input className='' type="radio" id={options} name={id}/>
+                <label className='pl-3' onClick={()=>handlequiz(options,id)} htmlFor={options}>{options}</label>
             </div>
             {/* <h1>{options}</h1> */}
         </div>

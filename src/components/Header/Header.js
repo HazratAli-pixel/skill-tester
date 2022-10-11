@@ -7,7 +7,7 @@ const Header = () => {
           <div className="container mx-auto navbar bg-neutral text-neutral-content">
             <div className="navbar-start">
               <Link to='/' className="btn btn-ghost normal-case text-xl"> 
-                <img src="assets/quiz-time.jpg" alt="" style={{width: '50px'}} className="mr-2 border-4 rounded-full" />Skill Tester
+                <img src="/assets/quiz-time.jpg" alt="" style={{width: '50px'}} className="mr-2 border-4 rounded-full" />Skill Tester
               </Link>
             </div>
             <div className='navbar-end'>
