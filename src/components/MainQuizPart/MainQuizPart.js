@@ -15,7 +15,6 @@ const MainQuizPart = () => {
             {
                 topics.map(data => <Topics key={data.id} quiztopics={data}></Topics>)
             }
-
             </div>
         </div>
     );

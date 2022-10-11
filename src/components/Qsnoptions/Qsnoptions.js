@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Qsnoptions = ({options}) => {
+const Qsnoptions = ({options,id}) => {
     return (
         <div>
-            <div>
-            <input type="radio" id="html" name="fav_language" value="HTML"/>
-            <label for="html">HTML</label>
+            <div className='bg-white p-3'>
+                <input type="radio" id={options} name={id} value={options}/>
+                <label htmlFor={options}>{options}</label>
             </div>
-            <h1>{options}</h1>
+            {/* <h1>{options}</h1> */}
         </div>
     );
 };
