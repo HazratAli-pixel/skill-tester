@@ -20,10 +20,10 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className='w-full mt-5 rounded-lg bg-slate-50 border-2 border-slate-400'>
-                    <p className="bg-slate-200 p-4 rounded-lg font-extrabold text-slate-800 text-start" >What is the purpose of react router?</p>
+                    <p className="bg-slate-200 p-4 rounded-lg font-extrabold text-slate-800 text-start" >About react useRef</p>
                     <div className='rounded-lg bg-teal-200 border-2 border-teal-400 m-2 p-2'>
-                        <p className='text-start py-2'><strong>Answer: </strong></p>
-                        <p className='text-start py-2'></p>
+                        <p className='text-start py-2'><strong>Answer: </strong>Essentially, useRef is like a “box” that can hold a mutable value in its .current property. Refs provide a way to access DOM nodes or React elements created in the render method.</p>
+                        <p className='text-start py-2'>In the typical React dataflow, props are the only way that parent components interact with their children. To modify a child, you re-render it with new props. However, there are a few cases where you need to imperatively modify a child outside of the typical dataflow. The child to be modified could be an instance of a React component, or it could be a DOM element. For both of these cases, React provides an escape hatch.</p>
                     </div>
                 </div>
             </div>
