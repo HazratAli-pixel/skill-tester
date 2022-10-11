@@ -5,12 +5,13 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div id="error-page" className="pt-16">
       <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <p>Sorry, an unexpected error has occurred. Please go back</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
+      <p>Hazrat Ali</p>
     </div>
   );
 }

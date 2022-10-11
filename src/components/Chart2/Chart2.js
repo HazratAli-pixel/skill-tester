@@ -13,7 +13,10 @@ export default function Chart2() {
       },[]);
   return (
      <div className="container mx-auto bg-slate-300">
-         <div className="flex justify-center">
+        <div className="pt-5">
+            <h1 className='text-3xl font-bold'>Quiz topic name and total questions</h1>
+        </div>
+        <div className="flex justify-center">
             <div>
             <ComposedChart
                 width={500}
@@ -36,6 +39,9 @@ export default function Chart2() {
             </ComposedChart>
             </div>
          </div>
+         <div className="py-3">
+            <p className='text-lg font-bold'>If you want to see Quiz test result, then play first</p>
+        </div>
      </div>
 
   );
