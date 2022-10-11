@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Chart2 from "../Chart2/Chart2";
 import ChartLayout from "../ChartLayout/ChartLayout";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Home/Home";
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
                     https://openapi.programming-hero.com/api/quiz`)
                 },
                 element: <ChartLayout></ChartLayout>,
+                errorElement:<Chart2></Chart2>
             },
             {
                 path:'blog',
