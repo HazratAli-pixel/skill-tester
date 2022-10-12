@@ -80,7 +80,7 @@ const MarkChart = ({chartData}) => {
                 <Legend />
                 <Bar dataKey="right" stackId="a" fill="#413ea0" />
                 <Bar dataKey="totalquiz" stackId="b" fill="#00000" />
-                <Bar dataKey="wrong" stackId="c" fill="#ffc658" />
+                <Bar dataKey="wrong" stackId="c" fill="#f5429e" />
             </BarChart>
         </div>
     );

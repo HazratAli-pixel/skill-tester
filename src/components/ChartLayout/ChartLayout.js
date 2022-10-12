@@ -12,7 +12,7 @@ const ChartLayout = () => {
             <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-slate-200 p-2'>
                 <div className='overflow-scroll bg-emerald-300 p-2'>
                     <div>
-                        <h1 className='text-3xl font-bold'>Quiz topic name and total questions</h1>
+                        <h1 className='text-2xl font-bold p-3 bg-violet-600 rounded-lg text-white'>Quiz topic name and total questions</h1>
                     </div>
                     <div>
                     <Chart chartData={chartData.data}></Chart>
@@ -20,11 +20,11 @@ const ChartLayout = () => {
                 </div>
                 <div className='overflow-scroll bg-emerald-300 p-2'>
                     <div>
-                        <h1 className='text-3xl font-bold'>Mark Chart (Quiz Result)</h1>
+                        <h1 className='text-2xl font-bold p-3 bg-violet-600 rounded-lg text-white'>Mark Chart (Quiz Result)</h1>
                     </div>
                     <div>
                     {
-                            rightmarkdata && wrongmarkdata? <MarkChart chartData={chartData.data}></MarkChart>:""
+                            rightmarkdata && wrongmarkdata? <MarkChart chartData={chartData.data}></MarkChart>:<p className='p-4 bg-red-300 rounded-lg my-2 font-bold'>For Quiz Result Chart you need to practice first</p>
                     }
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const Slider = () => {
     return (
         <div className='container mx-auto'>
-            <div className='flex justify-between flex-col md:flex-row lg:flex-row xl:flex-row bg-slate-400 p-2'>
+            <div className='flex justify-between flex-col md:flex-row lg:flex-row xl:flex-row bg-slate-200 p-2'>
                 <div className="carousel rounded-lg w-ful md:w-2/4 lg:w-2/4 xl:w-2/4 sm:w-full">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src="assets/p2.jpg" className="w-full" />
