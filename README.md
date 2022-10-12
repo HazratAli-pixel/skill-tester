@@ -1,4 +1,4 @@
-## Project name : Skill Tester
+# Project name : Skill Tester
 
 This is a React project
 CSS Library: tailwind and tailwind CSS component library daisyUI
@@ -7,13 +7,13 @@ Router: react router
 Dataload: axios
 for showing chart: rechart
 
-# Author information
+## Author information
 
 Md. Hazrat Ali
 Dept of CSE, DIU
 Phone : 01306440448
 
-# Basic Information about this project
+## Basic Information about this project
 
 This is a quiz test based project. Here anyone can take quiz tests on React, CSS, JavaScript, Git.
 In addition to giving quizzes on each topic, you can see how many are right and how many are wrong.
